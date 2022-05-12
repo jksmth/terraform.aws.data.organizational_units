@@ -35,5 +35,5 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_organizational_units"></a> [organizational\_units](#output\_organizational\_units) | A map of all organizational units in an single organization, the key is in path format to simplify lookups of nested OUs by name, e.g. mycorp/workloads/development/team1 |
+| <a name="output_organizational_units"></a> [organizational\_units](#output\_organizational\_units) | A map of all organizational units in an single organization, the key is in path format to<br>simplify lookups of nested OUs by name.<br><br>Exmaple: key=mycorp/workloads/development<br>Output:<br>{<br>  mycorp = {<br>    arn       = xxx<br>    id        = xxx<br>    name      = xxx<br>    parent\_id = ooo<br>  }<br>  "mycorp/workloads" = {<br>    arn = yyy<br>    id = yyy<br>    name = yyy<br>    parent\_id = xxx<br>  }<br>  "mycorp/workloads/development" = {<br>    arn = zzz<br>    id = zzz<br>    name = zzz<br>    parent\_id = yyy<br>  }<br>} |
 <!-- END_TF_DOCS -->
