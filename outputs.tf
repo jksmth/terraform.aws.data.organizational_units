@@ -28,5 +28,5 @@ output "organizational_units" {
     }
   EOT
 
-  value       = local.organizational_units
+  value = local.organizational_units
 }

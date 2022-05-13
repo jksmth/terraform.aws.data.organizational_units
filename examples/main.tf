@@ -8,7 +8,7 @@ module "orgs" {
 }
 
 output "all" {
-  value = module.orgs.organizational_units 
+  value = module.orgs.organizational_units
 }
 
 output "development_ou_id" {
@@ -16,5 +16,5 @@ output "development_ou_id" {
 }
 
 provider "aws" {
-  region = "eu-west-2" 
+  region = "eu-west-2"
 }
