@@ -1,10 +1,10 @@
 
-output "all" {
+output "ou_by_path" {
   description = "Outputs all organizational units as a flat map."
-  value       = module.orgs.organizational_units
+  value       = module.organization_data.organizational_units
 }
 
-output "development_ou_id" {
-  description = "Lookup organizational units ID by path key if exists."
-  value       = try(module.orgs.organizational_units[local.ou_path].id, "")
+output "ou_by_id" {
+  description = "Outputs all organizational units as a flat map using the ID as the map key."
+  value       = module.organization_data.organizational_units_by_id
 }
