@@ -4,7 +4,7 @@ locals {
 }
 
 module "orgs" {
-  source = "../"
+  source = "../../"
 }
 
 provider "aws" {
