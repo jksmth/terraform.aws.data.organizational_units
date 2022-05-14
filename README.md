@@ -141,6 +141,6 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_organizational_units"></a> [organizational\_units](#output\_organizational\_units) | A map of all organizational units under the primary root organization. The key is in path format to<br>simplify lookups of nested OUs by name. |
-| <a name="output_organizational_units_by_id"></a> [organizational\_units\_by\_id](#output\_organizational\_units\_by\_id) | A map of all organizational units under the primary root organization. The key is the organizational unit ID |
+| <a name="output_organizational_units"></a> [organizational\_units](#output\_organizational\_units) | A map of all organizational units including the root organization. The keys are<br>constructed 'path' based on the organizational hierarchy. |
+| <a name="output_organizational_units_by_id"></a> [organizational\_units\_by\_id](#output\_organizational\_units\_by\_id) | A map of all organizational units including the root organization. The keys are<br>the id for the organizational unit. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

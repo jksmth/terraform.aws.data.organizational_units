@@ -1,8 +1,8 @@
 
 output "organizational_units" {
   description = <<-EOT
-    A map of all organizational units under the primary root organization. The key is in path format to
-    simplify lookups of nested OUs by name.
+    A map of all organizational units including the root organization. The keys are
+    constructed 'path' based on the organizational hierarchy.
   EOT
 
   value = local.organizational_units
@@ -10,7 +10,8 @@ output "organizational_units" {
 
 output "organizational_units_by_id" {
   description = <<-EOT
-    A map of all organizational units under the primary root organization. The key is the organizational unit ID
+    A map of all organizational units including the root organization. The keys are
+    the id for the organizational unit.
   EOT
 
   value = local.organizational_units_by_id
